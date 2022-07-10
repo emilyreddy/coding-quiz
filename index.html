@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vik's JavaScript Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+        <!-- put any CDN links here for fonts, bootstrap etc -->
+
+        <!-- the following line is for the favicon -->
+        <!-- <link href="./assets/images/VM_Favicon_Logo.png" rel="icon" type="image/x-icon" /> -->
+    </head>
+<body>
+
+
+    <header>
+    </header>
+
+    <!-- opening screen -->
+    <div class="start_btn">
+      <button>Start Quiz</button>
+    </div>
+
+
+    <!-- opening info box -->
+    <div class="info_box">
+      <div class="info_title">
+          <span>Quiz Information</span>   
+      </div>
+      <div class="info_list">
+          <div class="info">1) There are 10 multiple choice questions</div>
+          <div class="info">2) Each correct answer is worth 100 points</div>
+          <div class="info">3) You will have 75 seconds to answer the questions</div>
+          <div class="info">4) Once the timer reaches 0, the quiz is over</div>
+          <div class="info">5) Your total points will be displayed at the end</div>
+      </div>
+      <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+          <button class="restart">Continue</button>
+      </div>
+    </div>
+
+
+    <!-- Quiz Window -->
+    <div class="quiz_box">
+      <header>
+          <div class="title">Vik's JavaScript Quiz</div>
+          <div class="timer">
+            <div class="time_text">Time Left</div>
+            <div class="timer_sec">75</div>
+          </div>
+      </header>
+      <section>
+        <div class="question_text">
+          <!-- <span>Question Text 01</span> -->
+        </div>
+          <div class="option_list">
+          </div>
+      </section>
+    <footer>
+      <div class="total_questions">
+      </div>
+      <button class="next_btn">Next Question</button>
+    </footer>
+    </div>
+
+
+
+    <!-- Points result window -->
+    <div class="result_box">
+      <h2>CONGRATULATIONS!</h2>
+      <div class="complete_text">You've reached the end</div>
+      <div class="score_text">
+      </div>
+      <div class="buttons">
+        <button class="scoreboard_btn">Save Score</button>
+        <button class="quit">Restart Quiz</button>
+      </div>
+    </div>
+
+
+
+    <!-- scoreboard window -->
+    <section id="score_window">
+      <div class="scoreboard_window">
+      <form id="player_score">
+        <label for="player_name" class="name_prompt">Enter Your Name</label>
+          <input type="text" id="player_name_input">
+          <br/><br/>
+          <button type="button" id="save_score_btn">Save Score</button>
+      </form>
+    <!-- </section>
+    <section> -->
+      <h2>Scoreboard</h2>
+      <ul id="scoreboard" class="leaderboard">
+        <li id="first_place"></li>
+        <li id="second_place"></li>
+        <li id="third_place"></li>
+        <li id="fourth_place"></li>
+        <li id="fifth_place"></li>
+      </ul>
+    </div>
+    </section>
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+</body> 
+</html>
